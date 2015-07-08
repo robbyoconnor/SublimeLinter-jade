@@ -22,7 +22,7 @@ class Jade(Linter):
     multiline = True
     regex = r'''(?xi)
         Error: .+?:(?P<line>\d+).*\r?\n
-        (.*\|.*\n)+
+        (?:.*\|.*\n)+
         .*\n
         (?P<message>.*)
     '''
